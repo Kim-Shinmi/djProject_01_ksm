@@ -4,20 +4,66 @@
 
 {% block pageStyle %} 
     <style>
+        .image-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
 
+        .background-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 60vh;
+        }
+
+        .image-wrapper {
+            display: flex;
+            gap: 30px;
+            justify-content: center; 
+           
+        }
+
+        .image-wrapper a {
+            text-align: center; 
+            background-color: #fff2bc; 
+            border-radius: 20px;
+            -webkit-transition:.2s ease-in-out; transition:.2s ease-in-out;
+        }
+
+        .image-wrapper img {
+            max-width: 100%;
+            max-height: 100%;
+        }
+
+        
+        .image-wrapper a:hover {
+            -webkit-transform:scale(1.1); transform: scale(1.1);
+        }
     </style>
 {% endblock %}
 
 {% block header_scripts %}
-<script>
-    $(document).ready(function() {
-
-    });
-</script>        
+    <script>
+        $(document).ready(function() {
+           
+        });
+    </script>
 {% endblock %}
 
-
 {% block pageContent %}
-<h1>어른들이 하는 일! 나도 해볼래요~</h1>
-
+    <h1>어른들이 하는 일! 나도 해볼래요~</h1>
+    <div class="background-container"> 
+        <div class="image-container">       
+            <div class="image-wrapper" style="margin-top: 60px;">
+                <a href="jobex"> 
+                    <img src="/static/images/탐험.png" alt="ex"> 
+                </a>
+                <a href="joby"> 
+                    <img src="/static/images/영상.png" alt="yt."> 
+                </a>
+            </div>
+        </div>
+    </div>
 {% endblock %}

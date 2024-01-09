@@ -1,0 +1,74 @@
+{% extends 'common/htmlTmp_based.html' %}
+{% load static %}
+
+{% block pageTitle %}직업체험 하러가기{% endblock %}
+
+{% block pageStyle %}
+section{
+    justify-content: center;
+    width: 1000px;
+    overflow:hidden;
+    margin: 4vh auto;
+}
+.map {
+    border: 1px solid black;
+}
+.offlineList{
+    justify-content: center;
+    width: 1000px;
+    margin: 0 auto 5vh;
+    border-spacing: 1vw;
+}
+.offlineList div{
+    width: 50%;
+    float: left;
+    padding: 20px;
+    border: 3px solid #fee566;
+    height: 250px;
+    background-color: #fff2bc;
+}
+.offlineList div:hover {
+    border:3px solid gray;
+    background-color: white;
+  }
+{% endblock %}
+
+{% block header_scripts %}
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+<script>
+$(document).ready(function() {
+    $.ajax({
+        type:"get",
+        url:"{% static '/datas/jobExperience.json' %}",
+        dataType:"json",
+        success: function(data) {
+            console.log("통신성공");
+            console.log(data);
+
+            $.each(data , function(i){
+                var str = "";
+                str +=  '<div><a href=' + data[i].link + ' target="_blank"><h4>' + data[i].title + '</h4></a>' +
+                        '<span><i class="bi bi-bookmark-fill"></i> ' + data[i].category + '</span>' + 
+                        '<p><i class="bi bi-geo-alt-fill"></i> ' + data[i].roadAddress + '</p>' +
+                        '<p><i class="bi bi-telephone-fill"></i> ' + data[i].telephone + '</p>' +
+                        '<p><i class="bi bi-clock-fill"></i> ' + data[i].description + '</p>'                                            
+                str += '</div>';
+                $('.offlineList').append(str);
+                
+           });
+        },
+        error:function() {
+            console.log("통신에러");
+        }
+    });
+});
+</script>
+{% endblock %}
+
+{% block pageContent %}
+<section>
+    <h1>직업체험관</h1>
+    <iframe class="map" src="https://www.google.com/maps/d/embed?mid=1HWkkiHfiqiuzG9rbRsuN3yOenhcWVeI&ehbc=2E312F&noprof=1" width="1000" height="700"></iframe>
+    <div class="offlineList"></div>
+</section>
+{% endblock %}

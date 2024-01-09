@@ -32,6 +32,7 @@
 
     $('.header a').each(function() {
       if ($(this).attr("href") == pageName) {
+        alert ('111');
         $(this).addClass('on');
       } else {
         $(this).removeClass('on');
@@ -58,4 +59,7 @@
   </main>
 </div>
 
+{% endblock %}
+
+{% block footer_scripts %} 
 {% endblock %}

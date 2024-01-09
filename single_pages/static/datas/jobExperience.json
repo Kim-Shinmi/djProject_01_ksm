@@ -1,0 +1,110 @@
+[{
+        "title":"한국잡월드",
+        "link":"http://www.koreajobworld.or.kr",
+        "category":"여행,명소>체험,홍보관",
+        "description":"<b>체험시간</b><br>1부: 09:30~13:30<br>2부: 14:30~18:30",
+        "telephone":"1644-1333",
+        "address":"경기도 성남시 분당구 정자동 4-6",
+        "roadAddress":"경기도 성남시 분당구 분당수서로 501",
+        "mapx":"1271060936",
+        "mapy":"373785236"
+},
+{
+        "title":"모빌리티 직업체험관",
+        "link":"https://adventure.lotteworld.com/kor/main/index.do",
+        "category":"여행,명소>관람,체험",
+        "description":"<b>체험시간</b><br>10:00~21:00",
+        "telephone":"1661-2000",
+        "address":"서울특별시 송파구 잠실동 40-1",
+        "roadAddress":"서울특별시 송파구 올림픽로 240 롯데월드",
+        "mapx":"1270964375",
+        "mapy":"375108460"
+},
+{
+        "title":"한국잡월드 숙련기술 체험관",
+        "link":"https://www.koreajobworld.or.kr",
+        "category":"여행,명소>체험,홍보관",
+        "description":"<b>체험시간</b><br>1부: 09:30~13:30<br>2부: 14:30~18:30",
+        "telephone":"1644-1333",
+        "address":"경기도 성남시 분당구 정자동 4-6 숙련기술체험관",
+        "roadAddress":"경기도 성남시 분당구 분당수서로 501 숙련기술체험관",
+        "mapx":"1271061023",
+        "mapy":"373793468"
+},
+{
+        "title":"어린이산림 직업체험관",
+        "link":"https://adventure.lotteworld.com/kor/main/index.do",
+        "category":"교육,학문>유아학습",
+        "description":"<b>체험시간</b><br>10:00~21:00",
+        "telephone":"1661-2000",
+        "address":"서울특별시 송파구 잠실동 40-1",
+        "roadAddress":"서울특별시 송파구 올림픽로 240",
+        "mapx":"1270964515",
+        "mapy":"375109007"
+},
+{
+    "title":"키자니아 서울",
+    "link":"https://www.kidzania.co.kr/intro",
+    "category":"여행,명소>체험,홍보관",
+    "description":"<b>체험시간</b><br>1부: 10:00~15:00<br>2부: 15:00~19:30",
+    "telephone":"1544-5110",
+    "address":"서울특별시 송파구 올림픽로 240",
+    "roadAddress":"서울특별시 송파구 올림픽로 240",
+    "mapx":"",
+    "mapy":""
+},
+{
+    "title":"키자니아 부산",
+    "link":"https://www.kidzania.co.kr/intro",
+    "category":"여행,명소>체험,홍보관",
+    "description":"<b>체험시간</b><br>1부: 10:00~15:00<br>2부: 15:00~19:30",
+    "telephone":"1544-5110",
+    "address":"부산광역시 해운대구 센텀4로 15(우동) 센텀시티몰",
+    "roadAddress":"부산광역시 해운대구 센텀4로 15(우동) 센텀시티몰",
+    "mapx":"",
+    "mapy":""
+},
+{
+    "title":"순천만잡월드",
+    "link":"https://www.scjw.or.kr/contents/view?subId=M01130103&menuId=M011301",
+    "category":"여행,명소>체험,홍보관",
+    "description":"<b>체험시간</b><br>1부: 09:30~12:40<br>2부: 14:10~17:20",
+    "telephone":"1811-7775",
+    "address":"전라남도 순천시 해룡면 대안리 1186-22",
+    "roadAddress":"전라남도 순천시 해룡면 대안리 1186-22",
+    "mapx":"",
+    "mapy":""
+},
+{
+    "title":"리쏘빌",
+    "link":"https://www.litsoville.com/category/%EC%9D%B4%EC%9A%A9%EC%95%88%EB%82%B4/%EC%B2%B4%ED%97%98%EC%8B%9C%EC%84%A4%20%EC%86%8C%EA%B0%9C",
+    "category":"여행,명소>체험,홍보관",
+    "description":"<b>체험시간</b><br>1부: 10:30~14:30<br>2부: 15:30~19:30",
+    "telephone":"1899-4062",
+    "address":"경기도 이천시 호법면 프리미엄아울렛로 177-120 키즈관 3층",
+    "roadAddress":"경기도 이천시 호법면 프리미엄아울렛로 177-120 키즈관 3층",
+    "mapx":"",
+    "mapy":""
+},
+{
+    "title":"대전광역시어린이회관",
+    "link":"https://www.djkids.or.kr/content.do?key=m2008167891232",
+    "category":"여행,명소>체험,홍보관",
+    "description":"<b>체험시간</b><br>1회차: 10:00~12:00, 2회차: 13:00~15:00, 3회차: 15:30~17:30",
+    "telephone":"1899-4062",
+    "address":"대전광역시 유성구 월드컵대로 32 대전월드컵경기장 동관 1층",
+    "roadAddress":"대전광역시 유성구 월드컵대로 32 대전월드컵경기장 동관 1층",
+    "mapx":"",
+    "mapy":""
+},
+{
+    "title":"화성시어린이문화센터",
+    "link":"http://59.12.59.2/exhibit/exhibit_list.do?limit=&search_type=&search_text=",
+    "category":"여행,명소>체험,홍보관",
+    "description":"<b>체험시간</b><br>1부: 9:30~13:30<br>2부: 14:30~18:30",
+    "telephone":"031-5183-3200",
+    "address":"경기도 화성시 봉담읍 동화길 146 화성시어린이문화센터 ",
+    "roadAddress":"경기도 화성시 봉담읍 동화길 146 화성시어린이문화센터",
+    "mapx":"",
+    "mapy":""
+}]
