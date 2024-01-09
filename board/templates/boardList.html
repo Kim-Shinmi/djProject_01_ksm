@@ -3,8 +3,23 @@
 {% block pageTitle %} 우리의 궁금증을 모아봤어요~ {% endblock %}
 
 {% block pageStyle %} 
+.contHeader {display:flex;}
 
-.searchBox  {width:40%; float:left; margin:0 0 0 10%; border:1px solid red;}
+.searchBox  {
+    width:50%; display:flex; float:left;
+    margin:0 0 1em 20%;
+}
+.searchBox input    {border:1px solid #cacaca;}
+.searchBox .icon    {
+    display:inline-block; margin:1px 0 0 5px;
+    width:36px; height:36px; cursor:pointer;
+}
+
+.btn    {
+    float:right; margin:0.5em 11% 1em; padding:0.3em 1em; color:#7c4c0e;
+    font-size:0.9em;
+    background:#ffb900; border-radius:1em; border-bottom:1px dotted #7c4c0e; 
+}
 
 table {width:80%; margin:auto; border-collapse:collapse; clear:both;}
 th, td {font-size:1em; color:#7c4c0e; text-align:center; padding:0.5em; border-bottom:1px dotted #7c4c0e;}
@@ -14,10 +29,6 @@ tr:nth-of-type(2n+1) {background:#fff2bc;}
 tr:nth-of-type(2n) {background:#fae793;}
 tr:last-of-type {border-bottom:2px solid #7c4c0e;}
 
-.btn    {
-    float:right; margin:1em 11%; padding:0.5em 1em; color:#7c4c0e; 
-    background:#ffb900; border-radius:1em; border-bottom:1px dotted #7c4c0e; 
-}
 
 td a {display:inline-block; padding:0 0.3em; border-bottom:1px dotted #7c4c0e;}
 {% endblock %}
@@ -35,18 +46,25 @@ td a {display:inline-block; padding:0 0.3em; border-bottom:1px dotted #7c4c0e;}
 {% block pageContent %}
 <h1>우리의 궁금증을 모아봤어요~</h1>
 
-
-{% if user.is_authenticated %}
-    {% comment %} {% if user.is_superuser or user.is_staff %} {% endcomment %}
-        <a class="btn" href="/board/create_post/" role="button">글쓰기</a>
-    {% comment %} {% endif %} {% endcomment %}
-{% endif %}
-<!-- 검색 부분 -->
-<div class="searchBox">
-    <div class="input-group">
+<div class="contHeader">
+    <!-- 검색 부분 -->
+    <div class="searchBox">
+        <!--    select name="searchIdx">
+            <option value="all">전체</option>
+            <option value="category">카테고리</option>
+            <option value="title">제목</option>
+            <option value="author">작성자</option>
+        </select    -->
         <input type="text" class="form-control" placeholder="Search for..." id="search-input" />
-            <button type="button" onclick="searchPost();">Go!</button>
+        <img src="/static/images/icon_search.png" onclick="searchPost();" class="icon" />
     </div>
+    
+    <!-- 글쓰기 버튼 부분 -->
+    {% if user.is_authenticated %}
+        {% comment %} {% if user.is_superuser or user.is_staff %} {% endcomment %}
+            <a class="btn" href="/board/create_post/" role="button">글쓰기</a>
+        {% comment %} {% endif %} {% endcomment %}
+    {% endif %}
 </div>
 
 
@@ -89,7 +107,6 @@ td a {display:inline-block; padding:0 0.3em; border-bottom:1px dotted #7c4c0e;}
     {% else %}
         <li class="page-item disabled"><a class="page-link" href="#">Next &rarr;</a></li>
     {% endif %}
-
 {% endif %}
 
 <script>
@@ -110,6 +127,3 @@ td a {display:inline-block; padding:0 0.3em; border-bottom:1px dotted #7c4c0e;}
     });
 </script>
 {% endblock %}
-
-
-

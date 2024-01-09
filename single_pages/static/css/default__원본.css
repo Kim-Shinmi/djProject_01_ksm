@@ -45,17 +45,6 @@ li {list-style-type:none;}
 
 
 
-
-/*      로그인/로그아웃/회원가입 관련       */
-form button {
-    float:right; margin:1em; padding:0.2em 1em;
-    background:#cfcfcf; border-radius:1em; border:1px dotted #7f7f7f; 
-}
-.loginBox .icon     {display:inline-block; margin:0; width:40px; height:40px;}
-.icon.small         {width:30px; height:30px;}
-.icom.mr            {margin-right:1em;}
-
-
 /*      Subpage Header       */
 
 header {height:60px; overflow:hidden; background:#fff2bc; margin-bottom:2em;}
@@ -81,4 +70,3 @@ header {height:60px; overflow:hidden; background:#fff2bc; margin-bottom:2em;}
 .loginBox a   {
     diaplay:inline-block; margin:0 0.5em; font-size:0.8em;
 }
-

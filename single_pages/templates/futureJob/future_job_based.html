@@ -6,9 +6,9 @@
 
 {% block pageStyle %} 
   .futureJobBox {width:90%; margin:auto;}
-  header{text-align:center;}
+  .header       {text-align:center;}
 
-  header a {
+  .header a     {
     display:inline-block; width:30%; max-width:350px; min-width:270px; padding:16px 0; margin:4px 2px;
     font-size:1.1em; color:black; text-align:center; text-decoration:none;
     background-color:white; border:none; border-radius:12px; cursor:pointer;
@@ -30,7 +30,7 @@
     var tmpList = $(location).attr('href').split('/');
     var pageName = tmpList[tmpList.length - 1];
 
-    $('header a').each(function() {
+    $('.header a').each(function() {
       if ($(this).attr("href") == pageName) {
         $(this).addClass('on');
       } else {
@@ -45,12 +45,12 @@
 
 {% block pageContent %}
 <div class="futureJobBox">
-  <header>
+  <div class="header">
       <h1>미래 직업에 대한 여러 나라의 연구 결과를 살펴보아요</h1>
-      <a href="futureJob" class="button1">글로벌 일자리 변화 트렌드</a>
-      <a href="futureJobSkill" class="button2">미래 직업을 위한 능력들</a>
-      <a href="futureJobMedia" class="button3">미래 직업 동영상</a>
-  </header>
+      <a href="/futureJob" class="button1">글로벌 일자리 변화 트렌드</a>
+      <a href="/futureJobSkill" class="button2">미래 직업을 위한 능력들</a>
+      <a href="/futureJobMedia" class="button3">미래 직업 동영상</a>
+  </div>
   <main>
   {% block futureJob_main %}
         

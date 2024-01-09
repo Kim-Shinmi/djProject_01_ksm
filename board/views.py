@@ -241,4 +241,29 @@ class PostSearch(PostList):
         context['search_info'] = f'Search: {q} ({self.get_queryset().count()})'
 
         return context
-    
+
+
+
+
+def login_page(request): 
+
+    return render(
+        request,
+        "users/form_login.html"
+    )
+
+
+def logout_page(request): 
+
+    return render(
+        request,
+        "users/form_logout.html"
+    )
+
+
+def signUp_page(request): 
+
+    return render(
+        request,
+        "users/form_signUp.html"
+    )

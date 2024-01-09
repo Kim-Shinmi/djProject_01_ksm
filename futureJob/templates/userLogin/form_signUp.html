@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>[직업 탐험] 회원가입 화면입니다.</title>
+    <link rel="stylesheet" href="{% static 'css/default.css' %}" media="screen" />
+</head>
+<body>
+<div class="pageLayer">
+    <h1>회원가입 화면입니다</h1>
+
+    <form class="signup" id="signup_form" method="post" action="/accounts/signup/">
+        {% csrf_token %}
+        <!--    input type="hidden" name="csrfmiddlewaretoken" value="ek27Pt4FSQxwXHzMa55ZGlmyeGri13oy9ziMh9gRoOtVvXLE3N5Mh5rhTwDNbPTE" -->
+
+        <p>
+            <label for="id_email">E-mail:</label>
+            <input type="email" name="email" placeholder="E-mail address" required="required" id="id_email" />
+        </p>
+        <p>
+            <label for="id_username">Username:</label>
+            <input type="text" name="username" placeholder="Username" required="required" id="id_username" />
+        </p>
+        <p>
+            <label for="id_password1">Password:</label>
+            <input type="password" name="password1" placeholder="Password" required="required" id="id_password1" />
+        </p>
+        <p>
+            <label for="id_password2">Password (again):</label>
+            <input type="password" name="password2" placeholder="Password (again)" required="required" id="id_password2">
+        </p>
+        
+        <button type="submit">Sign Up</button>
+    </form>
+</div>
+</body>
+</html>

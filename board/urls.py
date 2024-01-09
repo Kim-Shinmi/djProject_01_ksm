@@ -15,5 +15,8 @@ urlpatterns = [
     path("<int:pk>/new_comment/", views.new_comment),                   # 코멘트(댓글) 추가를 위한 path
     path("update_comment/<int:pk>/", views.CommentUpdate.as_view()),    # 코멘트(댓글) 수정을 위한 path
     path("delete_comment/<int:pk>/", views.delete_comment),             # 코멘트(댓글) 삭제를 위한 path
+    
+    path("login/", views.login_page),             # 로그인 창을 위한 path
+    path("logout/", views.logout_page),             # 로그인 창을 위한 path
+    path("signUp/", views.signUp_page),             # 회원가입 창을 위한 path
 ]
-

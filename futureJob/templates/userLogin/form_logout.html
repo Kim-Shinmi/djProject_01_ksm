@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>[직업 탐험] 로그아웃 화면입니다.</title>
+    <link rel="stylesheet" href="{% static 'css/default.css' %}" media="screen" />
+</head>
+<body>
+<div class="pageLayer">
+    <h1>로그아웃 화면입니다</h1>
+
+    <p>정말로 로그아웃 하시겠습니까?</p>
+
+    <form method="post" action="/accounts/logout/">
+        {% csrf_token %}
+        <!--    input type="hidden" name="csrfmiddlewaretoken" value="1r60kyjGluoZI5rOz18uIn7yOOVP8SGFLAu4HZhFwRmHsYFxssnjP9cmmH7Zes74" -->
+          
+        <button type="submit">Sign Out</button>
+    </form>
+</div>
+</body>
+</html>
+
+

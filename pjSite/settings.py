@@ -42,6 +42,7 @@ INSTALLED_APPS = [
     # 새로운 앱 생성 관련 항목
     'web_lib',
     'single_pages',
+    'futureJob',
     'board',
 
     # 게시글 입력 관련 양식 제작을 위한 항목

@@ -140,9 +140,34 @@ form button {border:1px solid #7c4c0e; padding:0.1em 1em; margin:0.5em 0; float:
                     {% if user.is_authenticated and comment.author == user %}
                         <div class="float-right">
                             <a role="button" id="comment-{{ comment.pk }}-delete-modal-btn" href="#" data-toggle="modal" data-target="#deleteCommentModal-{{ comment.pk }}">삭제</a>
+                            <!--    a role="button" id="comment-{{ comment.pk }}-update-btn" href="#" data-toggle="modal" data-target="#updateCommentModal-{{ comment.pk }}">수정</a    -->
                             <a role="button" id="comment-{{ comment.pk }}-update-btn" href="/board/update_comment/{{ comment.pk}}/">수정</a>
                         </div>
-                        <!-- Modal -->
+                        
+                        <!--   [수정] 버튼 실행시 모달창  -->
+                        <div class="modal fade" id="updateCommentModal-{{ comment.pk }}" tabindex="-1" role="dialog" aria-labelledby="logInModalLabel" aria-hidden="true"> 
+                            <div class="modal-dialog" role="document">  <!--    모달의 대화 상자 형식을 지정    -->
+                                <div class="modal-content">             <!--    모달의 내용을 담는 컨테이너     -->
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="loginModalLabel">댓글을 수정할께요~</h5>
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <form method="post" id="comment-form">
+                                            {% csrf_token %}
+                                            {{ form | crispy }}
+                                            <br/>
+                                            
+                                            <button type="submit" class="btn btn-primary float-right">Submit</button>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- [삭제] 버튼 실행시 모달창 -->
                         <div class="modal fade" id="deleteCommentModal-{{ comment.pk }}" tabindex="-1" role="dialog" aria-labelledby="deleteCommentModalLabel" aria-hidden="true">
                             <div class="modal-dialog" role="document">
                                 <div class="modal-content">

@@ -14,10 +14,10 @@ def jobExperience(request):
     return render(request, "subPage_jobExperience.html")
 
 def futureJob(request):
-    return render(request, "futureJob/future_job.html")
+    return render(request, "futurejob/future_job.html")
 
 def futureJobSkill(request):
-    return render(request, "futureJob/future_job_skill.html")
+    return render(request, "futurejob/future_job_skill.html")
 
 def futureJobMedia(request):
-    return render(request, "futureJob/future_job_media.html")
+    return render(request, "futurejob/future_job_media.html")
