@@ -1,0 +1,25 @@
+[{
+    "question":"나는 손으로 조립하거나 만드는 활동을 좋아한다.",
+    "type1":"Realistic","type2":"현실형","type3":"뚝딱이",
+    "answer01":"전혀 그렇지 않음","answer02":null,"answer03":null,"answer04":null,"answer05":null,"answer06":null,"answer07":"매우 그러함","answer08":null,"answer09":null,"answer10":null,
+    "answerScore01":"1","answerScore02":"2","answerScore03":"3","answerScore04":"4","answerScore05":"5","answerScore06":"6","answerScore07":"7","answerScore08":null,"answerScore09":null,"answerScore10":null,
+    "tip1Score":"2","tip2Score":"6","tip3Score":null,
+    "tip1Desc":"나는 조립하거나 만드는 활동에 관심이 없다.","tip2Desc":"나는 조립하거나 만들기를 하면 시간가는 줄 모른다.","tip3Desc":null,
+    "qitemNo":1
+},{
+    "question":"나는 사물이나 현상을 봤을 때 왜 그런지 생각하는 것을 좋아한다.",
+    "type1":"Investigative","type2":"탐구형","type3":"탐험이",
+    "answer01":"전혀 그렇지 않음","answer02":null,"answer03":null,"answer04":null,"answer05":null,"answer06":null,"answer07":"매우 그러함","answer08":null,"answer09":null,"answer10":null,
+    "answerScore01":"1","answerScore02":"2","answerScore03":"3","answerScore04":"4","answerScore05":"5","answerScore06":"6","answerScore07":"7","answerScore08":null,"answerScore09":null,"answerScore10":null,
+    "tip1Score":"2","tip2Score":"6","tip3Score":null,
+    "tip1Desc":"나는 신기하거나 특이한 것을 보아도 그다지 궁금하지 않다.","tip2Desc":"나는 대부분의 상황에서 왜 그럴까 생각한다.","tip3Desc":null,
+    "qitemNo":2
+},{
+    "question":"나는 새로운 것을 상상하는 것이 좋다.",
+    "type1":"Artistic","type2":"예술형","type3":"멋쟁이",
+    "answer01":"전혀 그렇지 않음","answer02":null,"answer03":null,"answer04":null,"answer05":null,"answer06":null,"answer07":"매우 그러함","answer08":null,"answer09":null,"answer10":null,
+    "answerScore01":"1","answerScore02":"2","answerScore03":"3","answerScore04":"4","answerScore05":"5","answerScore06":"6","answerScore07":"7","answerScore08":null,"answerScore09":null,"answerScore10":null,
+    "tip1Score":"2","tip2Score":"5","tip3Score":null,
+    "tip1Desc":"나는 상상을 거의 하지 않는다.","tip2Desc":"나는 자주 재미있는 상상이 떠오른다.","tip3Desc":null,
+    "qitemNo":3
+}]
