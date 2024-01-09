@@ -1,9 +1,0 @@
-
- 1) 프로젝트 생성 및 가상환경 세팅 
-
- 2) 앱 생성 (single_pages / board) ::: python manage.py startapp blog
-	- [명령어 설명] python manage.py startapp [생성하려는 앱(폴더) 이명]
-	- 생성한 앱 등록 ::: settings.py 파일 내 'INSTALLED_APPS' 변수에 생성한 앱 폴더명을 등록
-	- 생성한 앱을 웹페이지에서 실행하기 위해 프로젝트의 urls.py 파일 내 'urlpatterns' 변수에 경로(path) 등록
-
- 3) 관련 추가된 파일들은 [추가 파일들] 폴더 참고
