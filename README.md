@@ -20,3 +20,28 @@
 &#160; &#160; &#160; &#160; &#160; - 한국고용정보원 (2020)
 
 
+## 3. 웹 구성도
+<img src="images/webProject01_index.png" style="display:inline-block; width:700px; margin:auto;"/>
+
+
+## 4. 사용 스킬
+#### - Main : Python(Django Framework)
+#### - Sub : HTML / CSS / Javascript(jQuery, Ajax 활용)
+
+
+## 5. 웹 페이지 화면
+<div style="display:flex; width:700px; margin:auto;">
+  <img src="images/webProject01_page00.png" style="width:30%;"/>
+  <img src="images/webProject01_page01.png" style="width:30%;"/>
+  <img src="images/webProject01_page02.png" style="width:30%;"/>
+  <img src="images/webProject01_page03.png" style="width:30%;"/>
+  <img src="images/webProject01_page04.png" style="width:30%;"/>
+</div>
+
+
+
+
+
+
+
+
