@@ -1,1 +1,8 @@
-<img src="images/webProject01_coverImg.png" style="display:inline-block; width:500px; margin:auto;"/>
+<img src="images/webProject01_coverImg.png" style="display:inline-block; width:700px; margin:auto;"/>
+
+## 1. 기획 의도
+### - 현존하는 진로교육 사이트 제한적
+### - 진로교육에 대한 갈증 높음
+&#160; &#160; &#160; &#160; &#160; - 적절한 체험처 부족
+&#160; &#160; &#160; &#160; &#160; - 수용 인원 초과
+&#160; &#160; &#160; &#160; &#160; - 예산이나 인력의 부족
