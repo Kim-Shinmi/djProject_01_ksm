@@ -29,9 +29,3 @@ def jobex(request):
 
 def joby(request):
     return render(request, "subPage_joby.html")
-
-def game1(request):
-    return render(request, "game/d.html")
-
-def game2(request):
-    return render(request, "game/f.html")

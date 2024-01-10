@@ -29,12 +29,12 @@
     {% if user.is_authenticated %} 
         <img src="/static/images/icon_userDefault.png" class="icon small" /> '{{ user.username }}'님, 환영합니다!! 
         <a href="#" data-toggle="modal" data-target="#logoutModal">
-            <img src="/static/images/icon_login.png" class="icon mr" />
+            <img src="/static/images/icon_logout.png" class="icon mr" /><!--  '로그인'상태니 '로그아웃' 해야함 -->
         </a>
         <!--    모달창이 아닌 페이지 로딩을  위한 코드(<a href="/board/logout/">[ Log Out ]</a>)에서 수정  -->
     {% else %} 
         <a href="#" data-toggle="modal" data-target="#loginModal">
-            <img src="/static/images/icon_logout.png" class="icon mr" /><!--  [ log Out ] -->
+            <img src="/static/images/icon_login.png" class="icon mr" /><!--  '로그아웃'상태니 '로그인' 해야함 -->
         </a>
     {% endif %} 
 </div>
